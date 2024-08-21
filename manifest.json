@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Stocks",
+  "version": "1.0",
+  "description": "Stocks Vest e TradingView",
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+		"https://www.tradingview.com/screener/", 
+		"https://app.vest.investments/vest/portfolio"
+	  ],
+      "js": ["content.js"]
+    }
+  ]
+}
